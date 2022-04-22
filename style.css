@@ -1,18 +1,28 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+/* Cor01: #282c34d2 cor02: 30caf5
+*/                
+:root{
+       --corfundo: #282c34d2;
+       --cordestaque: #30caf5;
+       --cortexto: white ;
+       
+       --font-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #282c34d2;
+    font-family: var(--font-padrao);
+    background-color: var(--corfundo);
     width: 100%;
     margin-left: -10px;
     margin-right: -10px;
 }
 
 header > h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: #30caf5;
-    background-color: #282c34d2 ;
+    font-family: var(--font-padrao);
+    color: var(--cordestaque);
+    background-color: var(--corfundo) ;
     margin: -10px -10px 0px -10px;
     font-weight: bold;
 }
@@ -23,30 +33,32 @@ text-align: center;
 
 nav{
     height: 40px;
-    background-color: #282c34d2;
+    background-color: var(--corfundo);
     margin: 0px -10px;
     height: 40px;
     padding-top: 20px;
-    box-shadow: 0px 17px 10px 2px #30caf5;
+    box-shadow: 0px 17px 10px 0px var(--cordestaque);
     }
 
 nav > a {
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-padrao);
     font-weight: bold;
     font-size: 1.2em;
     margin-top: 10px;
-    color: blanchedalmond;
-    margin-right: 6%;
-    margin-left: 8%;
+    color: var(--cortexto);
+    margin-left: 42px;
+    margin-right: 15px;
+    padding: 7px 23px;
+    transition-duration: .7s;
     
 }
 
 nav > a:hover{
-    color: #30caf5;
+    background-color: rgb(136, 133, 133);
 }
 h2{
-    color: #30caf5;
+    color: var(--cordestaque);
     text-decoration: dotted;
     margin-left: 50px;
     margin-top: 66px;
@@ -58,7 +70,7 @@ p{
     text-align: justify;
     text-indent: 30px;
     font-weight: 400;
-    color: white ;
+    color: var(--cortexto) ;
     margin-left: 50px;
     font-size: 1.06em;
     margin-right: 30px;
@@ -70,16 +82,16 @@ p > a {
 }
 
 .box{
-    border: 1px 1px 1px 1px #16181D;
+    border: 1px 1px 1px 1px var(--corfundo);
 }
 span#react{
-    color: #30caf5;
+    color: var(--cordestaque);
 }
 
 h2.titulo{
     font-size: 2em;
     text-align: center;
-    color: white;
+    color: var(--cortexto);
     margin-right: 40px;
     margin-bottom: 50px;
 }
@@ -98,13 +110,13 @@ iframe {
  overflow: hidden; 
  max-width: 500px; 
  height: 100%;
- margin: 0 auto;
+ margin: 0px auto;
 }
 
 .embed iframe, .embed object, .embed embed{
  position: absolute; 
  top: 0; 
- left: 0; 
+ left: 5%; 
  width: 100%; 
  height: 300px; 
 }
@@ -141,7 +153,7 @@ h2.imagem{
 
 ul{
     font-size: 1.3em;
-    color: white;
+    color: var(--cortexto);
     font-weight: bold;
     display: inline;
     padding-bottom: 30px;
@@ -157,17 +169,17 @@ div#texto{
 }
 
 .dados{
-    color: white;
+    color: var(--cortexto);
     margin-left: 20px;
     margin-top: 10px;
 }
 
 .dados > a {
-    color: white;
+    color: var(--cortexto);
 }
 
 .dados > a:hover{
-    color: blue;
+    color: var(--cordestaque);
 }
 
 .boxx{
