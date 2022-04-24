@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Cor01: #282c34d2 cor02: 30caf5
 */                
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Comfortaa&display=swap');
 :root{
        --corfundo: #282c34d2;
        --cordestaque: #30caf5;
