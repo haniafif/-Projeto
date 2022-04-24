@@ -52,10 +52,10 @@ nav > a {
     color: var(--cortexto);
     padding-right: 6%;
     padding-left: 6%;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     transition-duration: .7s;
-    margin-left: 28px;
+    margin-left: 5%;
     
 }
 
